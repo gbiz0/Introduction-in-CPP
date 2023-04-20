@@ -1,0 +1,13 @@
+{
+    "launch": {
+      "version": "0.2.0",
+      "configurations": [
+        {
+          "name": "GDB - Debug current file",
+          "type": "gdb",
+          "request": "launch",
+          "program": "${file}"
+        }
+      ]
+    }
+  }
