@@ -25,4 +25,6 @@ int main() {
 	} else{
 		cout << "E";
 	}
+
+	return 0;
 }
