@@ -22,17 +22,17 @@ int main()
         if (salary < 500)
         {
             newsalary = salary + (salary * 0.05);
-            cout << "Your new salary is: " << newsalary;
+            cout << "Your new salary is: R$" << newsalary;
         }
         else if (salary >= 500 && salary <= 850)
         {
             newsalary = salary + (salary * 0.10);
-            cout << "Your new salary is: " << newsalary;
+            cout << "Your new salary is: R$" << newsalary;
         }
         else
         {
             newsalary = salary + (salary * 0.15);
-            cout << "Your new salary is: " << newsalary;
+            cout << "Your new salary is: R$" << newsalary;
         }
     }
     else if (option == 2)
@@ -40,22 +40,22 @@ int main()
         if (salary > 1500)
         {
             newsalary = salary + 25;
-            cout << "Your new salary is: " << newsalary;
+            cout << "Your new salary is: R$" << newsalary;
         }
         else if (salary >= 750 && salary <= 1500)
         {
             newsalary = salary + 50;
-            cout << "Your new salary is: " << newsalary;
+            cout << "Your new salary is: R$" << newsalary;
         }
         else if (salary >= 450 && salary < 750)
         {
             newsalary = salary + 75;
-            cout << "Your new salary is: " << newsalary;
+            cout << "Your new salary is: R$" << newsalary;
         }
         else
         {
             newsalary = salary + 100;
-            cout << "Your new salary is: " << newsalary;
+            cout << "Your new salary is: R$" << newsalary;
         }
     }
     else if (option == 3)
