@@ -18,13 +18,13 @@ int main() {
         cout << "Your salary is: R$" << salary;
     } else if (salary >= 200 && salary <=450) {
         tax = salary + (salary * 0.03);
-        cout << "Your salary is: R$" << tax;
+        cout << "Your salary is (with tax): R$" << tax;
     } else if (salary > 450 && salary < 700) {
         tax = salary + (salary * 0.08);
-        cout << "Your salary is: R$" << tax;
+        cout << "Your salary is (with tax): R$" << tax;
     } else if (salary >= 700) {
         tax = salary + (salary * 0.12);
-        cout << "Your salary is: R$" << tax;
+        cout << "Your salary is (with tax): R$" << tax;
     } else {
         cout << "That's option doesn't exist";
     }
