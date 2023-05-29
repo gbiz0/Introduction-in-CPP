@@ -11,6 +11,5 @@ int main (){
     for (i = 1; i < 10; i++){ // <- the repeater count from 1 to 9
         cout << "\ni: "<<i;// <- prit results
     }
-    system("PAUSE");// <- pause the print of programm
     return 0;
 }
