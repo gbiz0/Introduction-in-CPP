@@ -6,12 +6,12 @@
 using namespace std;
 
 int main (){
-    int i;
-
-    while(i >= 4 && i <= 12) {
-     if (i % 3 == 0) {
-     cout << "\n" << i; 
-     } i++;      
+    int i = 4;
+    while (i <= 12){
+        if (i % 3 == 0){
+            cout << i << endl;
+        }
+        i++; 
     }
      return 0;
 }
