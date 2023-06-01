@@ -12,7 +12,7 @@ int main (){
     cin >> x;
 
     while(contador <= x) {
-      calculo = calculo * contador;
+      calculo *= contador;
       contador++;
    }
     cout << "The result is: "<< calculo;
