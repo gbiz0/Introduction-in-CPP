@@ -8,16 +8,16 @@ using namespace std;
 
 int main (){
     srand(time(NULL));
-    int matrix[5][5], i, j;
+    int matriz[5][5], i, j;
     int posI, posJ, num;
 
     for ( i = 0; i < 5; i++){
         for (j = 0; j < 5; j++){
-            matrix[i][j] = rand() %1;
+            matriz[i][j] = rand() %1;
             if(i == j){
-              matrix[i][j] = 1; 
+              matriz[i][j] = 1; 
             } else {
-                matrix[i][j] = 0;
+                matriz[i][j] = 0;
               }
         }   
     }
@@ -25,7 +25,7 @@ int main (){
     for (i = 0; i < 5; i++) {
       cout <<"\n"; 
       for (j = 0; j < 5; j++) {
-        cout << matrix[i][j] << "\t" ;
+        cout << matriz[i][j] << "\t" ;
       }
     }
   }

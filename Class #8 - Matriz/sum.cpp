@@ -8,19 +8,19 @@ using namespace std;
 
 int main (){
     srand(time(NULL));
-    int matrix[7][5], matrix2[7][5], i, j;
-    int posI, posJ, result, max=0;
+    int matriz[7][5], matriz2[7][5], i, j;
+    int posI, posJ, result, max=0, sum;
 
     for ( i = 0; i < 7; i++){
         for (j = 0; j < 5; j++){
-            matrix[i][j] = rand() %101;
-            sum += matrix[i][j];
+            matriz[i][j] = rand() %101;
+            sum += matriz[i][j];
         }   
     }
     for (i = 0; i < 7; i++) {
         cout <<"\n"; 
         for (j = 0; j < 5; j++) {
-          cout << matrix[i][j] << "\t" ;
+          cout << matriz[i][j] << "\t" ;
         }
     }
    //incomplete 

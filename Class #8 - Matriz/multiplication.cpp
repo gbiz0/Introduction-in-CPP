@@ -8,21 +8,21 @@ using namespace std;
 
 int main (){
     srand(time(NULL));
-    int matrix[4][2], matrix2[4][2], i, j;
+    int matriz[4][2], matrix2[4][2], i, j;
     int posI, posJ, result, max=0;
 
     for ( i = 0; i < 4; i++){
         for (j = 0; j < 2; j++){
-            matrix[i][j] = rand() %13;
-            if (matrix [i][j] > max) {
-              max = matrix[i][j];
+            matriz[i][j] = rand() %13;
+            if (matriz [i][j] > max) {
+              max = matriz[i][j];
             }
         }   
     }
     for (i = 0; i < 4; i++) {
         cout <<"\n"; 
         for (j = 0; j < 2; j++) {
-          cout << matrix[i][j] << "\t" ;
+          cout << matriz[i][j] << "\t" ;
         }
     }
     cout << "\nThe biggest number is " << max;
@@ -30,7 +30,7 @@ int main (){
     for (i = 0; i < 4; i++) {
       cout <<"\n"; 
       for (j = 0; j < 2; j++) {
-        matrix2[i][j] = matrix[i][j] * max;
+        matrix2[i][j] = matriz[i][j] * max;
         cout << matrix2[i][j] << "\t" ;
       }
     }
