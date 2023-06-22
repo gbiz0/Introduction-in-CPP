@@ -9,22 +9,19 @@ mostrem.*/
 
 using namespace std;
 
-int main (){
-    srand(time(NULL));
-    int matriz[5][2], i, j;
-    int posI, posJ, max;
+int main(void) {
+  srand(time(NULL));
 
-    for ( i = 0; i < 2; i++){
-        for (j = 0; j < 5; j++){
-            matriz[i][j] = rand() %201;
+  int catetos[5][2], areas[5];
+  for (int i = 0; i < 5; ++i) {
+    for (int j = 0; j < 2; ++j) {
+      catetos[i][j] = (rand() % 10) + 1;
+    }
 
-    }
-    for (i = 0; i < 2; i++) {
-      cout <<"\n"; 
-      for (j = 0; j < 5; j++) {
-        cout << matriz[i][j] << "\t" ;
-      }
-    }
-    cout << "\nThe biggest number is " << max;
-    cout << "\nLocated on matriz in row " << posI << " and column " << posJ;
+    areas[i] = (catetos[i][0] * catetos[i][1]) / 2;
+    std::cout << "lados: [" << catetos[i][0] << ", " << catetos[i][1] << "]\t"
+              << "area: " << areas[i] << std::endl;
+  }
+
+  return 0;
 }
