@@ -16,7 +16,7 @@ int main (){
 
     for ( i = 0; i < 6; i++){
         for (j = 0; j < 6; j++){
-            matriz[i][j] = rand() %30;
+            matriz[i][j] = rand() %1001;
             if (matriz [i][j] > 25) {
             quant ++;
         }
